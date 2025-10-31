@@ -1,0 +1,96 @@
+:root {
+    --primary: #0d6efd;
+    --success: #198754;
+    --danger: #dc3545;
+    --info: #0dcaf0;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 40px;
+}
+
+.container-fluid {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body h3 {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+}
+
+.table {
+    font-size: 0.95rem;
+}
+
+.table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.badge {
+    padding: 6px 10px;
+    font-weight: 600;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination {
+    margin-bottom: 0;
+}
+
+.page-link {
+    color: var(--primary);
+}
+
+.page-link:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.fixed-top {
+    z-index: 1050;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+h5 {
+    font-weight: 600;
+}
+
+small {
+    font-size: 0.8rem;
+}

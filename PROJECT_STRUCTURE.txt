@@ -1,0 +1,26 @@
+grid_trader_pro/
+├── backend/
+│   ├── app.py                 # Flask server
+│   ├── paper_trader.py        # Live paper trading engine
+│   ├── grid_strategy.py       # Copy of working grid strategy
+│   ├── scheduler.py           # Auto-run paper trader
+│   └── database.py            # SQLite operations
+├── frontend/
+│   ├── templates/
+│   │   ├── index.html         # Dashboard
+│   │   ├── trades.html        # Trade history
+│   │   ├── portfolio.html     # Current portfolio
+│   │   └── settings.html      # Configuration
+│   └── static/
+│       ├── css/style.css
+│       ├── js/app.js
+│       └── img/
+├── data/
+│   ├── trades.db              # SQLite database
+│   └── paper_trading_log.csv  # CSV backup
+├── logs/
+│   └── app.log
+├── requirements.txt
+├── config.py
+├── README.md
+└── .gitignore
